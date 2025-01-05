@@ -62,8 +62,8 @@ class ElectricityMapTest extends TestCase
         $service = new ElectricityMapsService();
         $intensity = $service->getCarbonIntensity('DE');
 
-        // Assert that the response is 'N/A'
-        $this->assertEquals('N/A', $intensity);
+        // Assert that the response is null
+        $this->assertEquals(null, $intensity);
     }
 
     public function test_Mock_Red_Light(): void
